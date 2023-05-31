@@ -26,7 +26,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v3
@@ -48,8 +47,8 @@ jobs:
         id: build-image
         env:
           REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
-          REGISTRY_ALIAS: s2n2b3r0
-          REPOSITORY: eeap
+          REGISTRY_ALIAS: z4d7q3r3
+          REPOSITORY: asc-github-action
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and
