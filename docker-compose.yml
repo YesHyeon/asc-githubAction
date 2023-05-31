@@ -1,0 +1,10 @@
+version: '1'
+services:
+  node:
+    image: yeshyun/node-hyun-web:1.0.0
+    ports:
+      - '8082:8082'
+  react:
+    image: yeshyun/react-hyun-web:1.0.1
+    ports:
+      - '3306:3000'
